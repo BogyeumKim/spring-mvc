@@ -12,6 +12,6 @@ public class OldController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         System.out.println("OldController.handleRequest");
-        return null;
+        return new ModelAndView("new-form"); // 스프링프레임워크로 논리이름을 properites에서 설정
     }
 }
